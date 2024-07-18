@@ -39,7 +39,9 @@ Running this script provides you with the results for the predictive system, as 
 ### Component diagram for elements with notation for node pressure and link flow rate
 
 Pumps: have either a prescribed flow rate or prescribed pressure head. Energy consumed is proportional to the product of pressure and flow
+
 Pipes/filters: a pressure drop occurs proportional to and in the direction of the flow through
+
 Tanks: tank pressure increases linearly when filled with a constant flow rate (pumped) and decreases exponentially when emptied by pressure-driven flow (valve)
 
 ![image](https://github.com/user-attachments/assets/25d5c289-dfbf-4ed8-a095-c123416c3b4f)
