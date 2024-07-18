@@ -57,3 +57,9 @@ Flow-circuit diagram of the system model
 
 The predictive control scheme uses the function best_settings_Cl.m to determine the control actions that result in the best performance over a range of simulations.
 
+The cost weights for pressure, emissions, and chlorine were determined by starting with weights that scaled the minimum cost in each category to 1, and then iteratively adjusting their values and re-running the simulation until a desired performance was achieved.
+
+The control and prediction horizons cover the current and next time step and are both 5 minutes (out of a 5-day simulation period).
+A short prediction horizon as possible was chosen for low computational complexity and fast turnaround to confirm the feasibility of the control scheme.
+
+Further studies will refine the code to increase the length of the predictive, control and windows (delay) horizons and examine their sensitivities.
