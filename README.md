@@ -58,8 +58,20 @@ Flow-circuit diagram of the system model
 The predictive control scheme uses the function best_settings_Cl.m to determine the control actions that result in the best performance over a range of simulations.
 
 The cost weights for pressure, emissions, and chlorine were determined by starting with weights that scaled the minimum cost in each category to 1, and then iteratively adjusting their values and re-running the simulation until a desired performance was achieved.
+Future work will apply adaptive methods to develop the weights for water treatment systems.
 
 The control and prediction horizons cover the current and next time step and are both 5 minutes (out of a 5-day simulation period).
 A short prediction horizon as possible was chosen for low computational complexity and fast turnaround to confirm the feasibility of the control scheme.
+Future work will refine the code to increase the length of the predictive, control and windows (delay) horizons and examine their sensitivities.
 
-Further studies will refine the code to increase the length of the predictive, control and windows (delay) horizons and examine their sensitivities.
+## Conclusions from the study
+A control-oriented model was developed for a water treatment facility and a dynamic modeling framework is applied to a hydraulic system to evaluate the performance of MPC methods on meeting system objectives for a water treatment plant.
+The controller has been simulated in a case study to show improvement for hydraulic performance as well as emissions and chemical objectives specific to sustainable water treatment.
+
+This study is limited by the assumption that the model precisely predicts the behavior of the true system.
+This is a result of making simplifying assumptions such as sufficiently fast low-level control, linear system element dynamics, and knowledge of true system parameters.
+Further studies will be refined by incorporating complexities such as model mismatch, state uncertainty due to process noise, or dynamic state observation to compensate for poorly instrumented systems.
+
+Ongoing work is investigating the robustness of the controller with further case study simulating disruptive scenarios such as pump fouling and load shedding.
+A planned future extension to this work is development and experimental testing of a physical hydraulic testbed to test the proposed model and controller in more realistic scenarios.
+
