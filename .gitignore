@@ -1,0 +1,25 @@
+# MATLAB specific files
+*.asv               # Auto-save files
+*.m~                # Temporary backup files
+*.mlx               # MATLAB Live Script files
+*.slx               # Simulink model files
+*.mex*              # Compiled MATLAB executable files
+*.mat               # MATLAB workspace files
+*.fig               # MATLAB figure files
+*.mlappinstall      # MATLAB app install files
+*.mlpkginstall      # MATLAB package install files
+*.p                 # MATLAB protected files
+*.mlproj            # MATLAB project files
+*.prj               # MATLAB project files
+
+# Common directories
+*.dSYM              # Debugging symbols directory (macOS)
+.DS_Store           # macOS folder attribute files
+*.swp               # Swap files created by some text editors
+
+# Logs and databases
+*.log               # Log files
+
+# IDE files
+.idea/              # IDE project files for JetBrains IDEs
+.vscode/            # IDE project files for Visual Studio Code
