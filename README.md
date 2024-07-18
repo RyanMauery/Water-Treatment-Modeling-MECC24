@@ -55,3 +55,5 @@ Flow-circuit diagram of the system model
 
 ### MPC design
 
+The predictive control scheme uses the function best_settings_Cl.m to determine the control actions that result in the best performance over a range of simulations.
+
