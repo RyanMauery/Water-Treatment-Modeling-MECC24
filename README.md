@@ -16,7 +16,7 @@ git clone https://github.com/RyanMauery/Water-Treatment-Modeling-MECC24.git
 cd Water-Treatment-Modeling-MECC24
 ```
 
-## Explanation of files
+## Highlighted scripts for reproducing the results of the study
 
 ### Demand_and_Emissions_patterns
 Plots the daily and weekly patterns used in the study for demand and emissions. 
@@ -26,10 +26,13 @@ Plots the daily and weekly patterns used in the study for demand and emissions.
 
 ### Heuristic_Controller_Used_In_Paper
 A model of the system that uses rules-based control. 
-When a tank is empty, its valves close and pumps turn on. When a tank is full, valves open and pumps turn off
+When a tank is empty, its valves close and pumps turn on. When a tank is full, valves open and pumps turn off.
+Running this script provides you with the results for the reactive system, as seen in the case study of the paper.
 
 ### MPC_Controller_Used_In_Paper
-A model of the system that uses a predictive controller. The function "best_settings_Cl.m" simulates the system over a range of control actions, and then returns the actions that resulted in the best performance over the range of simulations
+A model of the system that uses a predictive controller. 
+The function "best_settings_Cl.m" simulates the system over a range of control actions, and then returns the actions that resulted in the best performance over the range of simulations.
+Running this script provides you with the results for the predictive system, as seen in the case study of the paper.
 
 # Supplemental information about the model and simulation
 
@@ -51,3 +54,4 @@ The main pathway of the treatment process starts at a low pressure reservoir and
 Flow-circuit diagram of the system model
 
 ### MPC design
+
